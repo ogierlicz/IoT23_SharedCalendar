@@ -1,7 +1,8 @@
 @model SharedCalendar.Models.Event
 
 <h2>@Model.Name</h2>
-<p>@Model.Date</p>
+<p>Start: @Model.Start</p>
+<p>End: @Model.End</p>
 @* <p>@Model.Description</p> *@
 
 <form asp-controller="Event" asp-action="Delete" method="post">
