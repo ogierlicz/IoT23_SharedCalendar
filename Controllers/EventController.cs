@@ -49,7 +49,7 @@ namespace SharedCalendar.Controllers
         // POST: Event/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Date,Color")] Event eventItem)
+        public async Task<IActionResult> Create([Bind("Id,Name,Start,End,Color")] Event eventItem)
         {
             if (ModelState.IsValid)
             {
